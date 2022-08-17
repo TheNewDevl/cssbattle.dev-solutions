@@ -63,3 +63,7 @@ body {
 .diff::after {
   mix-blend-mode: difference;
 }
+
+.body {
+  height: 300px;
+}
