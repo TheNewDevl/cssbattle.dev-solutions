@@ -1,0 +1,28 @@
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+
+<style>
+  .body {
+    background: #0b2429;
+  }
+  .drop {
+    background: #f3ac3c;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 30px;
+    left: 80px;
+    border-radius: 60px 0 60px 60px;
+    z-index: 3;
+  }
+  .drop:nth-child(1) {
+    transform: translate(50%, -50%);
+    background: #998235;
+    z-index: 2;
+  }
+  .drop:nth-child(3) {
+    transform: translate(100%, -100%) rotate(180deg);
+    z-index: 1;
+  }
+</style>
