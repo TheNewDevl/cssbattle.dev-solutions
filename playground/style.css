@@ -1,5 +1,5 @@
 :root {
-  --image: url("https://cssbattle.dev/targets/1.png");
+  --image: url("https://cssbattle.dev/targets/7.png");
 }
 
 html,
@@ -11,13 +11,16 @@ body {
 body {
   margin: 0;
   padding: 0;
+  background: hsl(235 19% 13%);
+  font-family: sans-serif;
+}
+
+main {
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
   justify-content: center;
   gap: 40px 20px;
-  background: hsl(235 19% 13%);
-  padding-top: 40px;
-  font-family: sans-serif;
+  padding-top: 60px;
 }
 
 #main::after {
@@ -66,4 +69,42 @@ body {
 
 .body {
   height: 300px;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid hsl(0 0% 100% / 0.4);
+  border-right: none;
+  border-radius: 5px;
+  background: hsl(235 19% 13%) center center / 100% 100% no-repeat;
+  color: hsl(0 0% 100% / 0.4);
+  font-size: 12px;
+  padding: 0 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#btn {
+  font-size: 18px;
+  height: 40px;
+  font-weight: bold;
+  background: rgba(244, 237, 237, 0.803);
+  color: hsl(235 19% 13%);
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#btn:hover {
+  background: hsl(235 19% 13%);
+  color: hsl(0 0% 100% / 0.4);
 }
