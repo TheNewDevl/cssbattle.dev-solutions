@@ -1,0 +1,38 @@
+<div class="rectangle flex">
+  <div class="box flex">
+    <div class="round"></div>
+  </div>
+</div>
+
+<style>
+  .body {
+    background: #222730;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rectangle {
+    width: 100%;
+    height: 150px;
+    background: #4caab3;
+    position: absolute;
+    top: 75px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background: #4caab3;
+    box-shadow: 0 0 0 50px #222730;
+    transform: rotate(45deg);
+  }
+  .round {
+    width: 50px;
+    aspect-ratio: 1/1;
+    background: #393e46;
+    border-radius: 100%;
+  }
+</style>
