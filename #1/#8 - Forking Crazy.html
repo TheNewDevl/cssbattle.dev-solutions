@@ -1,0 +1,41 @@
+<div class="base ab"></div>
+<div class="plain ab"></div>
+<style>
+  .body {
+    background: #6592cf;
+  }
+
+  .ab {
+    position: absolute;
+  }
+
+  .base {
+    background: #060f55;
+    bottom: 50px;
+    left: 130px;
+    width: 140px;
+    height: 100px;
+    border-radius: 0 0 80px 80px;
+  }
+  .base::after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    background: #6592cf;
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    left: 20px;
+    box-shadow: 40px 0 #6592cf, 80px 0 #6592cf;
+  }
+
+  .plain {
+    background: #060f55;
+    bottom: 150px;
+    left: 130px;
+    width: 20px;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 120px 0 #060f55, 80px 0 #060f55, 40px 0 #060f55,
+      60px 150px #060f55;
+  }
+</style>
