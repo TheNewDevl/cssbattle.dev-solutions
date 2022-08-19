@@ -1,0 +1,38 @@
+<div class="vertical"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+
+<style>
+  /* In the official CSSBATTLE playground remove the dot
+            use body{} instead .body{}
+            */
+  .body {
+    background: #000000;
+  }
+
+  .bar {
+    background: #af067c;
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    border-radius: 10px;
+    box-shadow: 0 100px #af067c;
+  }
+
+  .bar:nth-child(2) {
+    transform: translateY(50px) rotate(-4deg);
+    box-shadow: none;
+  }
+
+  .vertical {
+    background: #fff;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    box-shadow: 110px 50px #fff, 220px 40px #fff, 220px 0 #fff;
+  }
+</style>
