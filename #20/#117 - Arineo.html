@@ -1,0 +1,110 @@
+<!-- First Solution -->
+
+<div class="a"></div>
+<div class="a"></div>
+<div class="v"></div>
+<div class="v"></div>
+<div class="r"></div>
+<style>
+  .body {
+    /* In the official CSSBATTLE playground remove the dot
+            use body{} instead .body{}
+            */
+    background: #fff;
+  }
+
+  .a {
+    background: #2e2926;
+    height: 180px;
+    width: 44px;
+    position: absolute;
+    left: 134px;
+    top: 60px;
+    transform: skewX(-25deg);
+  }
+
+  .a:nth-child(2) {
+    transform: translateX(88px) skewX(25deg);
+  }
+
+  .v {
+    background: #0088ca;
+    height: 28px;
+    width: 80px;
+    position: absolute;
+    left: 120px;
+    top: 149px;
+    transform: skewY(45deg);
+    box-shadow: -15px 0 0 11px #fff;
+  }
+
+  .v:nth-child(3) {
+    width: 120px;
+    left: 200px;
+    top: 129px;
+    transform: skewY(-45deg);
+  }
+
+  .r {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    position: absolute;
+    top: calc(50% - 11px);
+    left: calc(50% - 11px);
+    background: #0088ca;
+  }
+</style>
+
+<!-- Poligon based solution -->
+<hr z a />
+<hr b z />
+<hr b z c />
+<hr d z />
+<hr d z />
+<style>
+  * {
+    margin: 0;
+    background: #fff;
+  }
+  [z] {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  [a] {
+    background: #2e2926;
+    clip-path: polygon(
+      176px 60px,
+      92px 79.5%,
+      34% 79.5%,
+      200px 103px,
+      264px 79.5%,
+      308px 79.5%,
+      224px 60px
+    );
+  }
+
+  [b] {
+    clip-path: polygon(20% 36%, 47% 72%, 48% 56%, 27% 29.5%);
+  }
+
+  [c] {
+    transform: rotate(-90deg) translate(40px, 40px);
+  }
+
+  [d] {
+    background: #0088ca;
+    clip-path: polygon(
+      120px 110px,
+      120px 45.78%,
+      200px 217.5px,
+      320px 98px,
+      320px 69px,
+      200px 63%
+    );
+  }
+  [d]:nth-child(4) {
+    clip-path: circle(3.1% at 200px 150px);
+  }
+</style>
