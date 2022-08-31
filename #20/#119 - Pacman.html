@@ -1,0 +1,60 @@
+<div p></div>
+<div bg>
+  <div b></div>
+  <div b></div>
+  <div b></div>
+</div>
+<div g></div>
+
+<style>
+  /* In the official CSSBATTLE playground remove the dot
+            use body{} instead .body{}
+            */
+
+  .body {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+  }
+
+  [p] {
+    background: #e0e246;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+  }
+
+  [p]::after {
+    content: "";
+    position: absolute;
+    left: 67%;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    transform: rotate(45deg);
+    box-shadow: 134px -92px 0 -21px #000, 150px -105px 0 -20px #000,
+      164px -119px 0 -20px #000;
+  }
+  [bg] {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  [b] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #fff;
+    mix-blend-mode: lighten;
+  }
+
+  [g] {
+    background: #c74e4e;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px 30px 0 0;
+  }
+</style>
