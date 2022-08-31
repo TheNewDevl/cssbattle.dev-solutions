@@ -1,0 +1,72 @@
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block">
+  <div class="invader"><div class="white"></div></div>
+  <div class="invader"></div>
+</div>
+
+<style>
+  /* In the official CSSBATTLE playground remove the dot
+            use body{} instead .body{}
+            */
+
+  .body {
+    background: #000;
+    display: grid;
+    border: 20px solid #54c144;
+    grid-template:
+      "a b c" 40px
+      "d d c" 40px
+      "e e c" 20px/ 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    margin: 0;
+  }
+
+  div {
+    background: #c74e4e;
+    position: relative;
+  }
+  .block:nth-child(1) {
+    grid-area: a;
+  }
+  .block:nth-child(2) {
+    grid-area: b;
+  }
+  .block:nth-child(3) {
+    grid-area: c;
+    height: 180px;
+  }
+  .block:nth-child(4) {
+    grid-area: d;
+    width: 200px;
+  }
+  .block:nth-child(5) {
+    background: #000;
+    grid-area: e;
+    margin-top: -20px;
+  }
+
+  .invader {
+    background: #54c144;
+    height: 10px;
+    width: 40px;
+    box-shadow: 0 30px #54c144, 10px 15px #54c144;
+  }
+  .invader:nth-child(2) {
+    transform: translate(-5px, 5px) rotate(90deg);
+    box-shadow: 0 -10px #54c144;
+  }
+  .white {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    top: 50%;
+    left: 150%;
+    transform: translateY(100%);
+    box-shadow: 20px 0 #fff;
+  }
+</style>
